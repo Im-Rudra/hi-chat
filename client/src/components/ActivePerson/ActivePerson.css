@@ -1,0 +1,40 @@
+.active-person {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: #cecece;
+  background-color: #262e35;
+  width: calc(100% - 40px);
+  height: 80px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.active-person h3 {
+  font-size: 1.5em;
+  position: relative;
+}
+
+.active-person h3::after {
+  content: '';
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: turquoise;
+  border-radius: 50%;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+}
+
+.active-person .avater {
+  background-color: #303841;
+  display: flex;
+  font-size: 2em;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
